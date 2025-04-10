@@ -11,7 +11,7 @@ public class Main {
             char removedChar = ticket_number.charAt(ticket_number.length()-1);  // the removed character
             int removedValue = Character.getNumericValue(removedChar);   // convert the removed character to its numeric value
 
-            String trimmed  = ticket_number.substring(0, ticket_number.length()-1); //removing the last character
+            String trimmed  = ticket_number.substring(0, ticket_number.length()-1); //removing the last character and returning the remaining characters.
            long actual_ticket = Long.parseLong(trimmed);    // getting the numeric value of the ticket
 
            if(actual_ticket % 7 == removedValue) {
